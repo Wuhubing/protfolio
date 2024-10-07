@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 31, 41, 55;
+  --background-rgb: 255, 255, 255;
+  --accent-color: 251, 146, 60;
+  --text-primary: 31, 41, 55;
+  --text-secondary: 75, 85, 99;
+  --text-tertiary: 107, 114, 128;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: rgb(var(--text-primary));
+  background-color: rgb(var(--background-rgb));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 249, 250, 251;
+    --background-start-rgb: 17, 24, 39;
+    --background-end-rgb: 31, 41, 55;
+  }
+}
+
+/* tailwind.css */
+@screen sm {
+  .mt-10-sm {
+    margin-top: 10px;
+  }
+}
+
+/* Style for the gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Style for each image */
+.gallery img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for each image */
+.gallery img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.group.active > .nav-indicator {
+  width: 4rem;
+  background-color: rgb(var(--accent-color));
+}
+
+.group.active > .nav-text {
+  color: rgb(var(--accent-color));
+}
+
+.text-primary {
+  color: rgb(var(--text-primary));
+}
+
+.text-secondary {
+  color: rgb(var(--text-secondary));
+}
+
+.text-tertiary {
+  color: rgb(var(--text-tertiary));
+}
+
+.hover-accent:hover {
+  color: rgb(var(--accent-color));
+}
+
+.icon-cloud-container {
+  height: 300px;
+  width: 100%;
+}
