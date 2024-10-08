@@ -1,6 +1,8 @@
 import { Link } from "react-scroll";
 import { aboutData } from '../src/data/content';
 import React from 'react';
+import Image from 'next/image';
+
 const Sidebar = () => {
   const PhoneStyles = {
     marginTop: "15px",
@@ -11,17 +13,28 @@ const Sidebar = () => {
     <>
       <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-16">
         <div>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-            <Link
-              activeClass="active"
-              to="/"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              {aboutData.name}
-            </Link>
-          </h1>
+          <div className="flex items-center space-x-4">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              <Link
+                activeClass="active"
+                to="/"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                {aboutData.name}
+              </Link>
+            </h1>
+            <div className="w-42 h-42 overflow-hidden">
+              <Image
+                src="/images/me.jpg"
+                alt={aboutData.name}
+                width={300}
+                height={300}
+                className="object-cover"
+              />
+            </div>
+          </div>
           <h2 className="mt-3 text-lg font-medium tracking-tight text-gray-700 sm:text-xl">
             {aboutData.title}
           </h2>

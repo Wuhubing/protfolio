@@ -26,6 +26,7 @@ export const experienceData = [
     company: "UCLA",
     position: "Graduate Research Assistant",
     period: "September 2023 — Present",
+    logoUrl: "/images/ucla-logo.png",
     description: `As a Graduate Research Assistant at UCLA, I'm involved in cutting-edge research projects in the field of data science. My work focuses on developing advanced machine learning models for natural language processing tasks, with a particular emphasis on improving the efficiency and interpretability of large language models.`,
     link: "https://www.ucla.edu/",
     technologies: ["Python", "PyTorch", "NLP", "Machine Learning", "Deep Learning"]
@@ -34,6 +35,7 @@ export const experienceData = [
     company: "Huawei",
     position: "Data Science Intern",
     period: "June 2022 — August 2022",
+    logoUrl: "/images/huawei-logo.png",
     description: `During my internship at Huawei, I worked on developing predictive models for network optimization. I analyzed large datasets of network performance metrics and user behavior to identify patterns and anomalies, contributing to improved network reliability and user experience.`,
     link: "https://www.huawei.com/",
     technologies: ["Python", "SQL", "Machine Learning", "Big Data", "Data Visualization"]
@@ -42,6 +44,7 @@ export const experienceData = [
     company: "China Unicom",
     position: "Data Analyst Intern",
     period: "May 2021 — July 2021",
+    logoUrl: "/images/china-unicom-logo.png",
     description: `At China Unicom, I assisted in analyzing customer data to improve service offerings and customer retention strategies. I developed dashboards and reports to visualize key performance indicators and customer trends, providing actionable insights to the marketing team.`,
     link: "https://www.chinaunicom.com/",
     technologies: ["R", "SQL", "Tableau", "Statistical Analysis", "Data Visualization"]
@@ -50,6 +53,7 @@ export const experienceData = [
     company: "Military LLM Project",
     position: "Research Assistant",
     period: "January 2023 — May 2023",
+    logoUrl: "/images/military-llm-logo.png",
     description: `I contributed to a confidential project focused on developing specialized large language models for military applications. My role involved fine-tuning models for specific tasks, ensuring data security, and optimizing model performance for deployment in resource-constrained environments.`,
     technologies: ["Python", "NLP", "Deep Learning", "Security Protocols", "Model Optimization"]
   }

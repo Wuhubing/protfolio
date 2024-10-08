@@ -5,8 +5,16 @@ import Experience from '../src/components/Experience';
 import Project from '../src/components/Project';
 import Certifications from '../src/components/Certifications';
 import Education from '../src/components/Education';
+import Skills from '../src/components/Skills'; // 新增这行
 
 export default function Home() {
+  const skills = [
+    "python", "pytorch", "tensorflow", "scikitlearn", "opencv", "jupyter",
+    "pandas", "numpy", "matplotlib", "docker", "kubernetes", "anaconda",
+    "googlecolab", "amazonaws", "postgresql", "firebase", "nginx", "vercel",
+    "git", "jira", "gitlab", "visualstudiocode", "tableau", "powerbi"
+  ];
+
   return (
     <>
       <div>
@@ -55,14 +63,15 @@ export default function Home() {
           />
         </Head>
       </div>
-      <main>
+      <main className="space-y-10 py-24"> {/* 增加垂直间距和上下内边距 */}
         <About />
         <Experience />
+        <Skills skills={skills} />
         <Project />
         <Certifications />
         <Education />
       </main>
-      <div className="mt-20">
+      <div className="mt-20 text-center text-sm text-gray-500"> {/* 居中对齐和调整颜色 */}
         A portfolio designed and coded in Visual Studio Code. Built
         with Next.js and Tailwind CSS, deployed with Netlify.
       </div>

@@ -6,3 +6,13 @@ module.exports = {
     return config;
   },
 };
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: {
+    unoptimized: true,  // 禁用图像优化
+  },
+}
+
+module.exports = nextConfig;
